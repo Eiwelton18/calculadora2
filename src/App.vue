@@ -9,7 +9,9 @@
 </template>
 
 <script>
+
 import Calculator from './main/Calculator.vue';
+
 export default {
     components: { Calculator }
 }
@@ -25,7 +27,9 @@ export default {
 }
 
 body{
-    margin: 0;
+    margin-top: 0;
+    
+    
 
 }
 
@@ -40,7 +44,7 @@ Button{
 #app{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: flex;
     justify-content: center;
     align-items: center;
     text-align: center;

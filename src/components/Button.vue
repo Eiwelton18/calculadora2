@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-
+/*
 .Button{
   
   align-items: center;
@@ -40,6 +40,6 @@ export default {
   background-color: rgba(195, 192, 247, 0.137);
   color: rgb(255, 255, 255);
 }
-
+*/
 
 </style>
