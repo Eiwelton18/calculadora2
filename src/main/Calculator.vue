@@ -10,7 +10,17 @@
       <Button label="7"  @ClickButton="addDigit" class="p-button-raised p-button-secondary"/>
     -->
     <Display
-      class="grid h-4rem bg-grey-200 font-bold text-white overflow-hidden"
+      class="
+        grid
+        align-items-center
+        flex-row-reverse
+        pr-1
+        h-4rem
+        bg-grey-200
+        font-bold
+        text-white
+        overflow-hidden
+      "
       :value="displayValue"
     />
 
@@ -24,7 +34,7 @@
           hover:bg-blue-700 hover:text-gray-900
           cursor-pointer
         "
-        @ClickButton="limpaTela('0')"
+        @Click="limpaTela('0')"
       >
         AC
       </div>
@@ -37,7 +47,7 @@
           hover:bg-blue-700 hover:text-gray-900
           cursor-pointer
         "
-        @ClickButton="setOperation"
+        @Click="setOperation('/')"
       >
         /
       </div>
@@ -91,7 +101,7 @@
           hover:bg-blue-700 hover:text-gray-900
           cursor-pointer
         "
-        @ClickButton="setOperation('*')"
+        @Click="setOperation('*')"
       >
         X
       </div>
@@ -145,7 +155,7 @@
           hover:bg-blue-700 hover:text-gray-900
           cursor-pointer
         "
-        @ClickButton="setOperation('-')"
+        @Click="setOperation('-')"
       >
         -
       </div>
@@ -199,7 +209,7 @@
           hover:bg-blue-700 hover:text-gray-900
           cursor-pointer
         "
-        @ClickButton="setOperation"
+        @Click="setOperation('+')"
       >
         +
       </div>
@@ -227,67 +237,11 @@
           hover:bg-blue-700 hover:text-gray-900
           cursor-pointer
         "
-        @ClickButton="setOperation"
+        @Click="setOperation('=')"
       >
         =
       </div>
     </div>
-
-    <!--
-    <Button
-      label="7"
-      class="
-        p-button-raised p-button-text
-        flex
-        align-items-center
-        justify-content-center
-        w-4rem
-        h-4rem
-        font-bold
-        text-black
-      "
-    />
-    <Button
-      label="8"
-      class="
-        p-button-raised p-button-text
-        flex
-        align-items-center
-        justify-content-center
-        w-4rem
-        h-4rem
-        font-bold
-        text-black
-      "
-    />
-    <Button
-      label="9"
-      class="
-        p-button-raised p-button-text
-        flex
-        align-items-center
-        justify-content-center
-        w-4rem
-        h-4rem
-        font-bold
-        text-black
-      "
-    />
-    <Button
-      label="X"
-      class="
-        p-button-raised p-button-text
-        flex
-        align-items-center
-        justify-content-center
-        w-4rem
-        h-4rem
-        font-bold
-        text-black
-      "
-    />
-    -->
-    <!--<div class="border-1 border-gray-400 shadow-4 flex align-items-center justify-content-center w-4rem h-4rem bg-blue-500 font-bold text-white border-round m-2">*</div>-->
   </Panel>
 </template>
 
@@ -382,17 +336,16 @@ export default {
 </script>
 
 <style>
+/*
 .calculator {
   height: 330px;
   width: 240px;
   border-radius: 10px;
   overflow: hidden;
-  background: #477eac36;
+  background: #ff0000;
   display: grid;
-
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 1fr 52px 52px 52px 52px 52px;
 }
+*/
 
 :root {
   --text-color: #495057;
